@@ -1,5 +1,5 @@
 name: 04 Using Actions
-on: push
+on: workflow_dispatch
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -17,7 +17,3 @@ jobs:
               run: npm ci
             - name: Run tests
               run: npm test
-
-        # 0. checkout code fr
-        # 1. install dependencies of our react application
-        # 2. run automated tests
